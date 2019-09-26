@@ -1,0 +1,13 @@
+title 0.6: Uusi muistiinpan
+
+note over selain:
+Käyttäjä lisää uuden muistiinpanon
+sille varattuun kenttään ja 
+tallentaa sen.
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over palvelin:
+Palvelin tallentaa muistiinpanon
+ja ilmoittaa siitä selaimelle.
+end note
+palvelin->selain: HTTP 201 {"message":"note created"}
